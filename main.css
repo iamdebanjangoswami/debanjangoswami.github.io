@@ -1,0 +1,138 @@
+body {
+    font-size: 2.0rem;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.stars {
+    color: #6a737d;
+}
+
+.license:before {
+    content: "\2696\ ";
+}
+
+.lang {
+    padding: 0 12px;
+    border-radius: 16px;
+    color: rgba(0,0,0,.87); 
+    background-color: #dedede;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.read_more {
+    text-transform: uppercase;
+}
+
+.description {
+    color: rgb(91,91,91);
+    font-size: 1.5rem;
+}
+
+.project_heading {
+    font-size: 2rem;
+}
+
+.head {
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: hsla(206, 100%, 47%, 1);
+    color: #fafafa;
+}
+
+a {
+    color: hsla(206, 100%, 47%, 1);
+}
+
+a:hover {
+    color: hsla(206, 100%, 40%, 1);
+}
+
+.link {
+    text-decoration: none;
+    padding: 4px;
+    transition: all .2s ease-in;
+}
+
+.link:hover {
+    color: #fafafa;
+    background-color: hsla(206, 100%, 47%, 1)
+}
+
+.row {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#footer {
+    color: #cdcdcd;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/* Animation */
+
+.text--line {
+    font-size: .5em;
+}
+
+svg {
+    position: relative;
+    font: 8em/1 Arial;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 2px;
+    -webkit-animation: stroke-offset 5s infinite ease-in-out;
+    animation: stroke-offset 5s infinite ease-in-out;
+}
+.text-copy:nth-child(1) {
+    stroke: #360745;
+    stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+    stroke: #D61C59;
+    stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+    stroke: #E7D84B;
+    stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+    stroke: #EFEAC5;
+    stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+    stroke: #1B8798;
+    stroke-dashoffset: 35%;
+}
+
+@-webkit-keyframes stroke-offset {
+    50% {
+        stroke-dashoffset: 35%;
+        stroke-dasharray: 0 87.5%;
+    }
+}
+
+@keyframes stroke-offset {
+    50% {
+        stroke-dashoffset: 35%;
+        stroke-dasharray: 0 87.5%;
+    }
+}
